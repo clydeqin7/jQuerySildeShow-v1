@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+       
+    <title>我的第一个jq轮播</title>
+    <style>
+        .images{
+            display: flex;
+            align-items: flex-start;
+            transition: all 0.5s;
+        }
+        .window{
+            width: 300px;
+            overflow: hidden;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        #buttons{
+            display: flex;
+            justify-content: space-between;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="images" id="images">
+            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-323580.jpg" alt="" width="300" height="200">
+            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-566996.jpg" alt="" width="300" height="200">
+            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-275298.jpg" alt="" width="300" height="200">
+            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-178547.jpg" alt="" width="300" height="200">
+        </div>
+        <span  id="buttons">
+            <span>第1张</span>
+            <span>第2张</span>
+            <span>第3张</span>
+            <span>第4张</span>
+        </span>
+    </div>
+</body>
+<script src="./main.js"></script> 
+</html>
